@@ -59,7 +59,6 @@ class myFileExplorer(main.Ui_MainWindow, QtWidgets.QMainWindow):
         
     def save_path(self, index):
         self.selected_path = self.fileModel.filePath(index)
-        self.selected_item = index
         
     def event_button_setup(self):
         self.Paste.clicked.connect(self.paste_clicked)
